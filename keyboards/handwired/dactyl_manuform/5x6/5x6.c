@@ -11,21 +11,21 @@ void led_set_kb(uint8_t usb_led) {
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) { /* First encoder */
         if (clockwise) {
-            // tap_code(KC_PGDN);
-          tap_code(KC_R);
+          tap_code(KC_VOLU);
         } else {
-          tap_code(KC_L);
-            // tap_code(KC_PGUP);
+          tap_code(KC_VOLD);
         }
     } else if (index == 1) { /* Second encoder */
         if (clockwise) {
-            tap_code(KC_U);
-
-            // tap_code(KC_DOWN);
+            tap_code(KC_VOLU);
         } else {
-            tap_code(KC_D);
-
-            // tap_code(KC_UP);
+            tap_code(KC_VOLD);
+        }
+    } else if (index == 2) { /* Third encoder */
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
         }
     }
 }
@@ -35,15 +35,5 @@ void encoder_update_kb(uint8_t index, bool clockwise) {
 }
 
 void matrix_init_kb(void) {
-
-    // // green led on
-    // DDRD |= (1<<5);
-    // PORTD &= ~(1<<5);
-
-    // // orange led on
-    // DDRB |= (1<<0);
-    // PORTB &= ~(1<<0);
-
 	matrix_init_user();
 };
-
