@@ -50,6 +50,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define ENCODERS_PAD_B_RIGHT { D5 }
 
 #define ENCODER_RESOLUTION 4
+// #define ENCODER_RESOLUTION 1 // Use this for debugging
+
 #define RGBLIGHT_SPLIT true
 // #define RGBLIGHT_MODE_BREATHING 1
 // #define RGBLIGHT_MODE_RAINBOW_MOOD 2
