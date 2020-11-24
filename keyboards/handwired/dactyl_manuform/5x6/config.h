@@ -57,5 +57,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define RGBLIGHT_MODE_RAINBOW_MOOD 2
 // #define RGBLIGHT_MODE_RAINBOW_SWIRL 3
 // #define RGBLIGHT_EFFECT_SNAKE true
-#define RGBLIGHT_ANIMATIONS true
+#define RGBLIGHT_ANIMATIONS
 // #define RGBLIGHT_EFFECT_BREATHING true
